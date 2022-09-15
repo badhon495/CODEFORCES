@@ -1,0 +1,31 @@
+l1 = []
+row = 0
+col = 0
+real_roww = 3
+real_col = 3
+for i in range(5):
+    u_input = map(int,input().split())
+    l1.append(u_input)
+
+def rowfinder(a):
+    col = 0
+    for j in a:
+        print(j)
+        col+=1
+        if j == 1:
+            print('l')
+            return col
+        else:
+            return  100
+
+
+for i in l1:
+    row+=1
+    print(i)
+    if rowfinder(i) != 100:
+        break
+
+print(col,row)
+
+total = (real_col-col)+(real_roww-row)
+print(total)
