@@ -1,0 +1,9 @@
+m, n, a = map(int, input().split())
+
+length = int(m / a)
+if m % a != 0:
+    length += 1
+bre = int(n / a)
+if n % a != 0:
+    bre += 1
+print(length * bre)
